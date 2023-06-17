@@ -1,0 +1,24 @@
+@media (max-width: 1120px) {
+	.excursions,
+	.orders__list {
+		grid-template-columns: 1fr 1fr;
+	}
+	.admin-sidebar,
+	.panel__form,
+	.panel__order {
+		background-color: var(--primary-color);
+		flex: 0 0 30%;
+	}
+}
+@media (max-width: 768px) {
+	.excursions,
+	.orders__list {
+		grid-template-columns: 1fr;
+	}
+	.admin-sidebar,
+	.panel__form,
+	.panel__order {
+		background-color: var(--primary-color);
+		flex: 0 0 40%;
+	}
+}

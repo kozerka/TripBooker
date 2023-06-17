@@ -1,0 +1,71 @@
+{
+	"excursions": [
+		{
+			"title": "PUSTYNIA BŁĘDOWSKA",
+			"description": "Pustynia Błędowska – największy w Polsce obszar lotnych piasków, leżący na pograniczu Wyżyny Śląskiej i Wyżyny Olkuskiej. Rozciąga się od dzielnicy Błędów Dąbrowy Górniczej na zachodzie do gminy Klucze na wschodzie. Granicą północną pustyni jest wieś Chechło, a na południu jest ograniczona dużym obszarem leśnym. Polecamy!",
+			"adultPrice": 10,
+			"childPrice": 5,
+			"id": 2
+		},
+		{
+			"title": "KRAKÓW STARE MIASTO",
+			"description": "Stare Miasto, tętniąca życiem dzielnica w centrum Krakowa, jest pełne tradycyjnych polskich restauracji, hoteli oraz sklepów z antykami i pamiątkami. Polecamy!",
+			"adultPrice": 40,
+			"childPrice": 15,
+			"id": 3
+		},
+		{
+			"title": "OJCOWSKI PARK NARODOWY",
+			"description": "Ojcowski Park Narodowy – park narodowy w Polsce, utworzony w 1956 roku. Znajduje się w województwie małopolskim, w powiecie krakowskim, około 16 km od Krakowa.",
+			"adultPrice": 150,
+			"childPrice": 50,
+			"id": 4
+		}
+	],
+	"orders": [
+		{
+			"name": "Jan Nowak",
+			"email": "jan@nowak.pl",
+			"totalPrice": 440,
+			"date": "15.06.2023",
+			"time": "10:15:35",
+			"items": [
+				{
+					"title": "OJCOWSKI PARK NARODOWY",
+					"totalPrice": 440,
+					"adultNumber": 0,
+					"adultPrice": 60,
+					"childNumber": 22,
+					"childPrice": 20
+				}
+			],
+			"id": 1
+		},
+		{
+			"name": "Jacek Ogórek",
+			"email": "jacek@ogórek.pl",
+			"totalPrice": 30,
+			"date": "15.06.2023",
+			"time": "12:17:14",
+			"items": [
+				{
+					"title": "KRAKÓW STARE MIASTO",
+					"totalPrice": 15,
+					"adultNumber": 0,
+					"adultPrice": 50,
+					"childNumber": 1,
+					"childPrice": 15
+				},
+				{
+					"title": "OJCOWSKI PARK NARODOWY",
+					"totalPrice": 15,
+					"adultNumber": 0,
+					"adultPrice": 50,
+					"childNumber": 1,
+					"childPrice": 15
+				}
+			],
+			"id": 2
+		}
+	]
+}

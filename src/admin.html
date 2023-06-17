@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript: API oraz FETCH - admin, devmentor.pl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./assets/img/icons8-trail-100.png" alt="logo" class="header__logo">
+            <h1 class="header__title">Trip Booker</h1>
+            <nav class="user">
+                <img src="/assets/img/icons8-user-64.png" alt="" class="user__logo">
+                <span class="user__type">Admin</span>
+            </nav>
+        </header>
+        <div class="content">
+            <section class="admin-sidebar">
+                <form class="form" novalidate>
+                    <h2 class="admin-sidebar__title">Dodaj nową wycieczkę</h2>
+                    <div class="form__row">
+                        <label class="form__label">
+                            Nazwa:
+                        </label>
+                        <input class="form__field" name="title" />
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label">
+                            Opis:
+                        </label>
+                        <textarea class="form__field form__field--longtext" name="description"></textarea>
+                    </div>
+                    <div class="form__row-price">
+                        <div class="form__row">
+                            <label class="form__label">
+                                Cena dorosły:
+                            </label>
+                            <input class="form__field" type="number" name="adultPrice" />
+                        </div>
+                        <div class="form__row">
+                            <label class="form__label">
+                                Cena dziecko:
+                            </label>
+                            <input class="form__field" type="number" name="childPrice" />
+                        </div>
+                    </div>
+                    <div class="form__field--submit">
+                        <input class="form__field-input form__field-submit" value="dodaj" type="submit" />
+                    </div>
+                </form>
+                <footer class="admin-sidebar__footer">
+                    &copy; 2023 - Trip Booker
+                </footer>
+            </section>
+            <main class="main">
+                <section class="main__gallery">
+                    <figure class="gallery__item">
+                        <img src="./assets/img/galleryPhoto1.jpg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./assets/img/galleryPhoto3.jpg" alt="" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="./assets/img/galleryPhoto2.jpg" alt="" class="gallery__img">
+                    </figure>
+                </section>
+                <section class="panel">
+                    <ul class="panel__excursions excursions">
+                        <li data-id="1" class="excursions__item excursions__item--prototype">
+                            <header class="excursions__header">
+                                <h2 class="excursions__title excursions--editable">Ogrodzieniec</h2>
+                                <p class="excursions__description excursions--editable">Lorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit. Amet
+                                    aliquam quam laboriosam quaerat temporibus dicta vitae maxime! Nemo, nobis
+                                    veritatis?
+                                </p>
+                            </header>
+                            <form class="excursions__form">
+                                <div class="excursions__field">
+                                    <label class="excursions__field-name">
+                                        Dorosły:
+                                        <strong class="excursions__price excursions--editable">99</strong>PLN
+                                    </label>
+                                </div>
+                                <div class="excursions__field">
+                                    <label class="excursions__field-name">
+                                        Dziecko:
+                                        <strong class="excursions__price excursions--editable">50</strong>PLN
+                                    </label>
+                                </div>
+                                <div class="excursions__field excursions__field--submit">
+                                    <input class="excursions__field-input excursions__field-input--update"
+                                        value="edytuj" type="submit" />
+                                    <input class="excursions__field-input excursions__field-input--remove" value="usuń"
+                                        type="submit" />
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+                <section class="orders">
+                    <h2 class="orders__tittle">Złożone zamówienia <span id="date"></span> </h2>
+                    <ul class="orders__list">
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
